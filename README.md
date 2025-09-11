@@ -9,3 +9,6 @@ Along with learning robotics, you will have to learn git commands, just by using
 - Everyone will have their own branch that they will need to maintain
 - You will need to learn how to rebase your branch on main each week (hopefully without merge conflicts)
 - You will learn how to checkout old commits
+
+
+Hello, world :)
