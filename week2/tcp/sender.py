@@ -1,4 +1,4 @@
-import socket.socket as socket
+import socket
 
 # FILL IN... what is the host for your own computer?
 host = xxx

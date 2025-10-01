@@ -18,7 +18,5 @@ conn, addr = s.accept()  # Accept a connection
 print(f"Connected by {addr}")
 while True:
     data = conn.recv(1024)  # Receive data (max 1024 bytes at a time)
-    if not data:
-        break
     print(f"Received: {data.decode('utf-8')}")
     time.sleep(.5)
