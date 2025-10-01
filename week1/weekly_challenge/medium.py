@@ -18,3 +18,29 @@ random.shuffle(arr)
 end = []
 
 # Your Code Here:
+placeholder = 0
+index = 0
+loop = True
+while loop == True:
+	smallin = index
+	for i in range(index,100):
+		if arr[i] < arr[smallin]:
+			smallin = i
+	placeholder = arr[index]
+	arr[index] = arr[smallin]
+	arr[smallin] = placeholder
+	index += 1
+	if index == 100:
+		loop = False
+print(arr)
+
+outarr = []
+index = 0
+for i in range(0,10):
+	inarr = []
+	for x in range(0,10):
+		inarr.append(arr[index])
+		index += 1
+	outarr.append(inarr)
+for inarr in outarr:
+	print(inarr)
