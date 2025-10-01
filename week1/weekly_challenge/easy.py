@@ -16,3 +16,11 @@ arr = [i for i in range(1, 101)]
 end = []
 
 # Your Code Here:
+num_lists = 10
+def split(arr, num_lists):
+	length = len(arr)
+	return [ arr[i*length // num_lists: (i+1)*length // num_lists]
+		for i in range(num_lists) ] 
+block = split(arr,10) 
+for i in block:
+	print(i)
